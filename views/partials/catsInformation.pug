@@ -1,0 +1,24 @@
+div
+    .top-section-navigation
+        h4
+            a(href="/") Home
+            p >
+            p #{page}
+            if name
+                p >
+                p #{ name }
+
+    .cat-details
+        if data[0]
+            if page === 'breeds'
+                include .././pages/breeds
+            else if page === 'categories'
+                include .././pages/categories
+            else if page === 'test'
+                include .././pages/test
+            else if page === 'favourite'
+                include .././pages/favourite
+        else 
+            h2 No Data available
+
+

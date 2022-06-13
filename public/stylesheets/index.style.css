@@ -1,0 +1,45 @@
+.index-page>section:first-child{
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid black;
+}
+
+.index-page h2{
+    margin-bottom: 2rem;
+}
+
+.index-page h2 span{
+    font-weight: normal;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.breeds-categories-section{
+    margin: 3rem 25% 0 25%;
+}
+
+.breeds-categories-section h3{
+    border-bottom: .2rem solid black;
+    width: fit-content;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+
+.breeds-categories-section ul{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.breeds-categories-section ul li{
+    margin-bottom: .5rem;
+}
+
+.breeds-categories-section ul a:hover{
+    text-decoration: underline;
+    color: palevioletred;
+}
+
+.breeds-section{
+    margin-bottom: 4rem;
+}

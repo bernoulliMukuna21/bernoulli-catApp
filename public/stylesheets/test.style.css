@@ -1,0 +1,49 @@
+.cat-knowledge-test{
+    text-align: center;
+}
+.question-section h2{
+    margin-bottom: 2rem;
+}
+.answer-options-section ul{
+    margin: 1rem 35%;
+}
+
+.answer-options-section li{
+    border: .1rem solid lightgray;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.answer-options-section li:hover{
+    border: .2rem solid black;
+}
+.cat-knowledge-test button{
+    font-size: 2rem;
+    background-color: white;
+    border: .1rem solid palevioletred;
+    color: palevioletred;
+    padding: .5rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.cat-knowledge-test button:hover{
+    background-color: palevioletred;
+    color:  white;
+}
+
+.correctAnswer{
+    background-color: green;
+    color: white;
+}
+
+.wrongAnswer{
+    background-color: red;
+    color: white;
+}
+
+#disallowed-answering { pointer-events: none; }
+
+#allowed-answering { pointer-events: auto; }

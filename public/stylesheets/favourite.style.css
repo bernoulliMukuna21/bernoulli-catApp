@@ -1,0 +1,16 @@
+.all-favourite-cats{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2rem;
+    /* row-gap: 2rem; */
+}
+
+.all-favourite-cats>div{
+    text-align: center;
+}
+
+.fa.fa-times{
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}

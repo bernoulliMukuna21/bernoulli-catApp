@@ -1,0 +1,14 @@
+.cat-knowledge-test
+    .question-section 
+        h2 Which breed does the cat below belong to?
+        img(src=data[0].url, alt='catImage')
+    .answer-options-section
+        ul 
+            each answerOption in selectedBreedsOptions
+                li #{answerOption.name}
+
+        input(type='hidden', name='correct_answer', 
+            id='correct_answer', value=correctAnswer)
+    button(class='next-question')
+        | Next 
+        i.fa.fa-arrow-circle-right

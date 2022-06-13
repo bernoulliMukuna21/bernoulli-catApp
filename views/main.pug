@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    main 
+        if page === 'index'
+            include ./pages/index
+        else 
+            include ./partials/catsInformation

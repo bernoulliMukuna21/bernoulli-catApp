@@ -1,0 +1,17 @@
+.all-favourite-cats
+        each favourite_data in data
+            div
+                section.favourited-cat-image 
+                    img(src=favourite_data.image.url, 
+                        alt='favourited cat')
+
+                    input(type='hidden', name='favourited_imageId',
+                        class='favourited_imageId', 
+                        value=favourite_data.image_id)
+
+                    input(type='hidden', name='favourited_favouriteId',
+                        class='favourited_favouriteId', 
+                        value=favourite_data.id)
+
+                section.favourited-cat-image-option
+                    .fa.fa-times

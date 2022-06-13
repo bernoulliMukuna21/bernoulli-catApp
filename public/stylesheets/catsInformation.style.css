@@ -1,0 +1,30 @@
+.top-section-navigation h4{
+    display: flex;
+    opacity: .5;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.top-section-navigation h4 a{
+    text-decoration: underline;
+}
+.top-section-navigation h4 a:hover{
+    color: blue;
+}
+
+.top-section-navigation h4 p:nth-child(even){
+    margin: 0 .5rem;
+}
+
+.cat-details img{
+    width: 35vh;
+    height: 35vh;
+    object-fit: cover;
+    object-position: top;
+    border: .1rem dashed black;
+    border-radius: .5rem;
+}
+
+.cat-details span{
+    font-size: 1.2rem;
+}

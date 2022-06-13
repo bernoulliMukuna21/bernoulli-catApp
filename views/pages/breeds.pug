@@ -1,0 +1,103 @@
+.breed-information
+    - var breedsDetailedInfos = (data[0].breeds)[0];
+    div
+        section.breed-information-left-hand-side
+            div.breed-image-section
+                img(src=data[0].url)
+                h1 #{breedsDetailedInfos.name}
+            div.breed-details-section
+                ul
+                    li 
+                        span life_span:
+                        span #{breedsDetailedInfos.life_span}
+                    li 
+                        span origin:
+                        span #{breedsDetailedInfos.origin}
+                    li 
+                        span width:
+                        span #{data[0].width}
+                    li 
+                        span height:
+                        span #{data[0].height}
+                    li 
+                        span weight (imperial):
+                        span #{breedsDetailedInfos.weight.imperial}
+                    li 
+                        span weight (metric):
+                        span #{breedsDetailedInfos.weight.metric}
+
+        section.breed-information-right-hand-side
+            - console.log(breedsDetailedInfos.description)
+            section.description 
+                h3 Description 
+                p #{ breedsDetailedInfos.description }
+
+            section.ratings
+                h3  Ratings
+                section.boolean-ratings
+                    ul 
+                        li 
+                            span indoor: #{' '}
+                            span #{ breedsDetailedInfos.indoor === 0 ? 'False' : 'True'}
+                        li 
+                            span rex: #{' '}
+                            span #{ breedsDetailedInfos.rex === 0 ? 'False' : 'True'}
+                        li 
+                            span rare: #{' '}
+                            span #{ breedsDetailedInfos.rare === 0 ? 'False' : 'True'}
+                        li 
+                            span natural: #{' '}
+                            span #{ breedsDetailedInfos.natural === 0 ? 'False' : 'True'}
+                        li 
+                            span hairless: #{' '}
+                            span #{ breedsDetailedInfos.hairless === 0 ? 'False' : 'True'}
+                        li 
+                            span experimental: #{' '}
+                            span #{ breedsDetailedInfos.experimental === 0 ? 'False' : 'True'}
+
+                section.one-to-five-ratings
+                    ul 
+                        li 
+                            span adaptability: #{' '}
+                            span #{breedsDetailedInfos.adaptability}/5
+                        li 
+                            span affection_level: #{' '}
+                            span #{breedsDetailedInfos.affection_level}/5
+                        li 
+                            span child_friendly: #{' '}
+                            span #{breedsDetailedInfos.child_friendly}/5
+                        li 
+                            span dog_friendly: #{' '}
+                            span #{breedsDetailedInfos.dog_friendly}/5
+                        li 
+                            span energy_level: #{' '}
+                            span #{breedsDetailedInfos.energy_level}/5
+                        li 
+                            span grooming: #{' '}
+                            span #{breedsDetailedInfos.grooming}/5
+                        li 
+                            span health_issues: #{' '}
+                            span #{breedsDetailedInfos.health_issues}/5
+                        li 
+                            span intelligence: #{' '}
+                            span #{breedsDetailedInfos.intelligence}/5
+                        li 
+                            span shedding_level: #{' '}
+                            span #{breedsDetailedInfos.shedding_level}/5
+                        li 
+                            span social_needs: #{' '}
+                            span #{breedsDetailedInfos.social_needs}/5
+                        li 
+                            span stranger_friendly: #{' '}
+                            span #{breedsDetailedInfos.stranger_friendly}/5
+                        li 
+                            span vocalisation: #{' '}
+                            span #{breedsDetailedInfos.vocalisation}/5
+        
+    div
+        p More information:
+        ul 
+            li: a(href=breedsDetailedInfos.cfa_url, target='_blank') #{breedsDetailedInfos.cfa_url}
+            li: a(href=breedsDetailedInfos.vetstreet_url, target='_blank') #{breedsDetailedInfos.vetstreet_url}
+            li: a(href=breedsDetailedInfos.vcahospitals_url, target='_blank') #{breedsDetailedInfos.vcahospitals_url}
+            li: a(href=breedsDetailedInfos.wikipedia_url, target='_blank') #{breedsDetailedInfos.wikipedia_url}

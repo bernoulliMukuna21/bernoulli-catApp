@@ -1,0 +1,17 @@
+.categorie-image-section 
+    section 
+        img.currentCategorieImage( src = data[0].url , alt="catImage" )
+    section.image-favourite-section
+        div
+
+            - var imageId = data[0].id;
+            - var imageIsLikedHtml;
+            - if( favouriteId ){ imageIsLikedHtml = 'imageIsLiked' }
+
+            button.like-image( id = imageIsLikedHtml )
+                span Like
+                .fa.fa-heart
+                input(type='hidden', name='imageId', id='imageId', value=imageId)
+                input(type='hidden', name='favouriteId', id='favouriteId', value=favouriteId)
+            p#get-another-image click to see another
+            input(type='hidden', name='categorieId', id='categorieId', value=id)

@@ -1,0 +1,93 @@
+/* .breed-information{
+    border: .1rem solid black;
+} */
+
+.breed-information>div:first-child{
+    display: grid;
+    grid-template-columns: 30% 69%;
+    column-gap: 1%;
+    padding: 1rem 0;
+}
+
+/* Left Hand Side*/
+.breed-information-left-hand-side{
+    text-align: center;
+    padding: 0 1rem;
+}
+.breed-details-section{
+    margin-top: 2rem;
+}
+.breed-details-section ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.breed-details-section li{
+    padding: .5rem 1rem;
+    color: white;
+    background-color: palevioletred;
+    margin: .5rem .5rem 0 0;
+    border-radius: .5rem;
+}
+
+.breed-details-section span:first-child{
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+/* Right Hand Side*/
+/* .breed-information-right-hand-side{
+    border: .1rem solid black;
+}
+ */
+.ratings ul{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.ratings ul li{
+    /* border: .1rem solid palevioletred; */
+    padding: .25rem .5rem;
+    margin: 0 .75rem .75rem 0;
+}
+
+.breed-information-right-hand-side>section{
+    border: .1rem solid black;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.breed-information-right-hand-side h3{
+    border-bottom: .1rem solid black;
+    padding: 1rem;
+}
+
+.description p, .ratings section{
+    padding: .5rem 1rem;
+}
+
+.boolean-ratings{
+    border-bottom: .2rem solid lightgray;
+}
+
+/* More Information Section*/
+.breed-information>div:last-child{
+    border-top: .1rem solid black;
+    padding: 1rem;
+    text-align: center;
+}
+.breed-information>div:last-child ul{
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+.breed-information>div:last-child li{
+    margin: 0 1rem;
+}
+
+.breed-information>div:last-child a:hover{
+    color: blue;
+    text-decoration: underline;
+}
