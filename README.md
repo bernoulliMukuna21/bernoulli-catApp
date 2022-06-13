@@ -17,15 +17,17 @@ be viewed in a section called 'My Favourites'.
 The technology used to build this application is NodeJS (express), HTML(Jade), CSS & CSS. To run
 the application , please unsure that [node](https://nodejs.org/en/download/) is downloaded. Once
 this is downloaded, follow the steps below to run the application:
-    * Install the packages:
-        ```console 
-        npm install
-        ```
-    * create a ```.env``` file in the root directory
-        ```console
-        CAT_API_KEY = "<your_api_key>"
-        ```
-    * run the app
-        ```console 
-        npm start
-        ```
+
+* Install the packages:
+```console 
+npm install
+```
+  
+* create a ```.env``` file in the root directory
+```console
+CAT_API_KEY = "<your_api_key>"
+```
+* run the app
+```console 
+npm start
+```
